@@ -1,0 +1,21 @@
+{
+  "name": "challenge_6",
+  "homepage": "https://github.com/kbrante/challenge_6",
+  "authors": [
+    "karina BRANTE <karina.brante@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/external/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
