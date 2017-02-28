@@ -1,0 +1,46 @@
+.container {
+    background-image: url(../images/header.png);
+
+}
+header {
+    margin: 3em 3em 4em 3em;
+}
+header h1 {
+    font-family: "Oswald";
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+nav {
+    font-family: "Abel";
+    font-size: 1.5em;
+
+}
+header ul {
+    background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    display: flex;
+    justify-content: center;
+    border: 1px solid #8ed4f8;
+}
+ul li {
+    list-style: none;
+    margin: 1em;
+    text-transform: uppercase;
+
+}
+ul li a{
+    color: white;
+}
+header img {
+    border: 25px solid white;
+}
+.row{
+    background-image: url(../images/fond.png);
+}
+section {
+    font-family: "Arial";
+    font-size: 1em;
+}
