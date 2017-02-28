@@ -3,7 +3,8 @@
 
 }
 header {
-    margin: 3em 3em 4em 3em;
+        margin: 0;
+        padding: 0;
 }
 header h1 {
     font-family: "Oswald";
@@ -17,30 +18,98 @@ header h1 {
 nav {
     font-family: "Abel";
     font-size: 1.5em;
-
 }
 header ul {
-    background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    background: linear-gradient(to bottom, #76cbfa 0%,#60abf8 44%,#4a91d2 100%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     border: 1px solid #8ed4f8;
 }
 ul li {
     list-style: none;
-    margin: 1em;
     text-transform: uppercase;
-
+    margin: 0.5em 0;
 }
 ul li a{
     color: white;
 }
 header img {
-    border: 25px solid white;
+    border: 5px solid white;
+    margin: 1em 0;
 }
 .row{
     background-image: url(../images/fond.png);
 }
-section {
+#first section {
+    margin: 0.6em;
+    display: flex;
+    flex-direction: column;
+}
+section p {
     font-family: "Arial";
     font-size: 1em;
+}
+button {
+    background-color: #ff3d00;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 10%;
+    border: none;
+    align-self: center;
+}
+#second article {
+    background-image: url(../images/fond-article.png);
+    padding: 1em;
+}
+#second article img {
+    width: 25%;
+    float: left;
+    margin: 0em 1em;
+
+}
+#second article h4 {
+    margin-left: 1em;
+}
+#second article p {
+    margin-left: 1em;
+}
+main h2 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Oswald";
+}
+main h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Oswald";
+    color:#ff0000;
+}
+@media screen and (min-width: 767px) {
+    header {
+        margin: 3em 3em 4em 3em;
+    }
+    nav {
+        font-family: "Abel";
+        font-size: 1.5em;
+    }
+    header ul {
+        justify-content: center;
+    }
+    ul li {
+        margin: 1em;
+    }
+    header img {
+        border: 25px solid white;
+    }
+
+    #first section {
+        margin: 1em;
+    }
+    section h3 {
+        font-size: 1.5em;
+    }
+    section+p {
+        font-weight: bold;
+    }
 }
