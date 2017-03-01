@@ -1,18 +1,37 @@
 .container {
     background-image: url(../images/header.png);
-
 }
 header {
         margin: 0;
         padding: 0;
 }
+.navbar {
+    border: none;
+    color: white;
+}
+.navbar-default,
+.navbar-toggle{
+    border: none;
+}
+.navbar-header {
+    background-image: url(../images/header.png);
+    border: none;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a {
+    color: white;
+    background-color: transparent;
+}
 header h1 {
     font-family: "Oswald";
     color: white;
     text-align: center;
-    font-size: 4em;
+    font-size: 2.5em;
     /*text-transform: uppercase;*/
-    margin-bottom: 1em;
+    margin: 1em 0;
     font-weight: 400;
 }
 nav {
@@ -62,12 +81,12 @@ section p {
 #second article {
     background-image: url(../images/fond-article.png);
     padding: 1em;
+    margin: 0.7em 0;
 }
 #second article img {
     width: 25%;
     float: left;
-    margin: 0em 1em;
-
+    margin: 0.5em 1em;
 }
 #second article h4 {
     margin-left: 1em;
@@ -76,8 +95,8 @@ section p {
     margin-left: 1em;
 }
 main article {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 main h2 {
     /*text-transform: uppercase;*/
@@ -94,11 +113,12 @@ main h3 {
 main p {
     font-family: "Arial"
 }
-main a {
+main p a {
     color: #ff0000;
     text-decoration: underline;
 }
-main a:last-of-type {
+.btn,
+.btn-default {
     background-color: #ff3d00;
     color: white;
     border: none;
@@ -131,7 +151,6 @@ aside p {
 }
 #sidebar2 ul{
     padding-left: 0;
-
 }
 #sidebar2 li:not(:last-child) {
     border-bottom: 1px solid #e6e6e6;
@@ -148,8 +167,8 @@ aside p {
 #foncee {
     background-image: url(../images/footer.png);
 }
-article h2 {
-    font-size: 3em;
+#foncee h2 {
+    font-size: 2em;
     /*text-transform: uppercase;*/
     font-family: "Oswald";
 }
@@ -158,6 +177,12 @@ article h2 {
     background-image: url(../images/citation.jpg);
     border-radius: 1em;
     padding: 1em;
+}
+.photos{
+	margin-bottom: 1.5em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 .photos img {
     margin: 0.4em;
@@ -177,33 +202,98 @@ footer a {
     text-decoration: underline;
     color: #232323;
 }
-@media (min-width: @screen-sm-min) {
+@media (min-width: 670px) {
     header {
         margin: 3em 3em 4em 3em;
     }
+    header h1 {
+        text-align: center;
+        color: white;
+        font-size: 4em;
+    }
+    .container-fluid {
+        background-image: url(../images/header.png);
+    }
     nav {
         font-family: "Abel";
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+    .navbar-nav {
+        float: none;
     }
     header ul {
         justify-content: center;
+        flex-direction: row;
+        align-items: center;
     }
     ul li {
         margin: 1em;
     }
+    .navbar-collapse {
+        padding: 0;
+    }
+    .container-fluid{
+        padding: 0;
+    }
     header img {
         border: 25px solid white;
     }
-
+    #first {
+        padding: 0 2em;
+    }
     #first section {
         margin: 1em;
     }
-    section h3 {
-        font-size: 1.5em;
+    #second article {
+        margin: 1em 0;
+        padding-bottom: 2.3em;
     }
-    section+p {
-        font-weight: bold;
+    #second article img {
+        width: 15%;
+        float:left;
+        margin: 0em 1em;
+    }
+    main img {
+        margin: 2em auto;
+    }
+    main p {
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+    }
+    .photos img {
+        margin: 0.8em;
     }
 }
-@media (min-width: @screen-md-min) {
+@media (min-width: 1000px) {
+    #second h4 {
+        font-size: 1.3em;
+
+    }
+    #second article {
+        margin: 1em 1em;
+        padding-bottom: 2.3em;
+    }
+    #second article img {
+        width: 40%;
+        float:left;
+        margin: 0em 1em;
+    }
+    main article h2,
+    main article h3 {
+        text-align: left;
+    }
+    #foncee h2 {
+        margin: 1.8em auto;
+    }
+    /*#photo {
+        padding: 0;
+        margin: 0;*/
+    /*}*/
+    .photos img {
+        /*margin: 0.5em;*/
+
+    }
+    .btn,
+    .btn-default {
+
 }
