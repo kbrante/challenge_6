@@ -52,7 +52,7 @@ section p {
 #first p:nth-child(2){
     font-weight: bold;
 }
-#first section p:first-child {
+#first section p:first-of-type {
     color:red;
 }
 button {
