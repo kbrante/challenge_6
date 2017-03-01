@@ -25,12 +25,12 @@ header ul {
     flex-direction: column;
     border: 1px solid #8ed4f8;
 }
-ul li {
+header ul li {
     list-style: none;
     text-transform: uppercase;
     margin: 0.5em 0;
 }
-ul li a{
+header ul li a{
     color: white;
 }
 header img {
@@ -49,11 +49,14 @@ section p {
     font-family: "Arial";
     font-size: 1em;
 }
+#first p:nth-child(2){
+    font-weight: bold;
+}
 button {
-    background-color: #ff3d00;
+    background: linear-gradient(to bottom, #ff3d00 0%,#ff0000 100%);
     color: white;
     padding: 0.5em 1em;
-    border-radius: 10%;
+    border-radius: 0.5em;
     border: none;
     align-self: center;
 }
@@ -73,6 +76,10 @@ button {
 #second article p {
     margin-left: 1em;
 }
+main article {
+    display: flex;
+    flex-direction: column;
+}
 main h2 {
     text-transform: uppercase;
     font-size: 2.5em;
@@ -85,6 +92,67 @@ main h3 {
     font-family: "Oswald";
     color:#ff0000;
 }
+main p {
+    font-family: "Arial"
+}
+main a {
+    color: #ff0000;
+    text-decoration: underline;
+}
+main a:nth-child(2) {
+    text-transform: uppercase;
+}
+aside h2 {
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+#sidebar1 section:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+
+}
+aside section {
+    padding: 1.5em 0;
+
+}
+aside label {
+    background: linear-gradient(to bottom, #ff3d00 0%,#ff0000 100%);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: none;
+    align-self: center;
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+aside p {
+    margin-top: 1em;
+}
+#sidebar2 section{
+    padding: 0;
+}
+#sidebar2 ul{
+    padding-left: 0;
+
+}
+#sidebar2 li:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+}
+#sidebar2 li {
+    list-style: none;
+    padding: 1em 0;
+    margin: 0;
+}
+#sidebar2 a {
+    color: #333;
+    margin-left: 1em;
+}
+
+article h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: "Oswald";
+}
+
 @media screen and (min-width: 767px) {
     header {
         margin: 3em 3em 4em 3em;
