@@ -52,6 +52,9 @@ section p {
 #first p:nth-child(2){
     font-weight: bold;
 }
+#first section p:first-child {
+    color:red;
+}
 button {
     background: linear-gradient(to bottom, #ff3d00 0%,#ff0000 100%);
     color: white;
@@ -152,7 +155,15 @@ article h2 {
     text-transform: uppercase;
     font-family: "Oswald";
 }
-
+.citation {
+    font-style: italic;
+    background-image: url(../images/citation.jpg);
+    border-radius: 1em;
+    padding: 1em;
+}
+.citation span {
+    font-weight: bold;
+}
 @media screen and (min-width: 767px) {
     header {
         margin: 3em 3em 4em 3em;
