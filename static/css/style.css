@@ -11,7 +11,7 @@ header h1 {
     color: white;
     text-align: center;
     font-size: 4em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 1em;
     font-weight: 400;
 }
@@ -27,7 +27,7 @@ header ul {
 }
 header ul li {
     list-style: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin: 0.5em 0;
 }
 header ul li a{
@@ -49,17 +49,13 @@ section p {
     font-family: "Arial";
     font-size: 1em;
 }
-#first p:nth-child(2){
+#first p:first-of-type{
     font-weight: bold;
 }
-#first section p:first-child {
-    color:red;
-}
-button {
-    background: linear-gradient(to bottom, #ff3d00 0%,#ff0000 100%);
+#first a {
+    text-align: center;
+    background-color: #ff3d00;
     color: white;
-    padding: 0.5em 1em;
-    border-radius: 0.5em;
     border: none;
     align-self: center;
 }
@@ -84,13 +80,13 @@ main article {
     flex-direction: column;
 }
 main h2 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-size: 2.5em;
     text-align: center;
     font-family: "Oswald";
 }
 main h3 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-align: center;
     font-family: "Oswald";
     color:#ff0000;
@@ -102,20 +98,20 @@ main a {
     color: #ff0000;
     text-decoration: underline;
 }
-main a:nth-child(2) {
-    text-transform: uppercase;
+main a:last-of-type {
+    background-color: #ff3d00;
+    color: white;
+    border: none;
+    text-decoration: none;
 }
 aside h2 {
-    text-transform: uppercase;
     font-family: "Oswald";
 }
 #sidebar1 section:not(:last-child) {
     border-bottom: 1px solid #e6e6e6;
-
 }
 aside section {
     padding: 1.5em 0;
-
 }
 aside label {
     background: linear-gradient(to bottom, #ff3d00 0%,#ff0000 100%);
@@ -124,7 +120,7 @@ aside label {
     border-radius: 0.5em;
     border: none;
     align-self: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: "Oswald";
 }
 aside p {
@@ -149,22 +145,39 @@ aside p {
     color: #333;
     margin-left: 1em;
 }
-
+#foncee {
+    background-image: url(../images/footer.png);
+}
 article h2 {
     font-size: 3em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: "Oswald";
 }
 .citation {
-    font-style: italic;
+    /*font-style: italic;*/
     background-image: url(../images/citation.jpg);
     border-radius: 1em;
     padding: 1em;
 }
-.citation span {
-    font-weight: bold;
+.photos img {
+    margin: 0.4em;
 }
-@media screen and (min-width: 767px) {
+.photos a {
+    text-align: center;
+    background-color: #ff3d00;
+    color: white;
+    border: none;
+    margin: 0.5em;
+}
+#footer {
+    background-image: url(../images/bas-de-page.png);
+    padding: 0.5em;
+}
+footer a {
+    text-decoration: underline;
+    color: #232323;
+}
+@media (min-width: @screen-sm-min) {
     header {
         margin: 3em 3em 4em 3em;
     }
@@ -191,4 +204,6 @@ article h2 {
     section+p {
         font-weight: bold;
     }
+}
+@media (min-width: @screen-md-min) {
 }
